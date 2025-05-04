@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>0</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lw=2
+Main
+--
+dsasadsa
+--
+_+main(args: String[]): void_
+--
+Responsibilities:
+- Entry point of the program</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>65</y>
+      <w>105</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;create&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;160.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>65</y>
+      <w>110</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;create&gt;&gt;</panel_attributes>
+    <additional_attributes>200.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>425</x>
+      <y>145</y>
+      <w>100</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>UserInterface
+--
+-sc: Scanner
+--
++UserInterface():
++start(): void
+--
+Responsibilities
+-Display all movie information
+-Book Tickets</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>145</y>
+      <w>105</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>AdminInterface
+--
+-sc: Scanner
+--
++start(): void
+--
+Responsibilities
+-Administration of movies/tariffs</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>870</x>
+      <y>385</y>
+      <w>105</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>TariffFactory
+--
+_+createTariff: Tariff_
+--
+Responsibilities
+-Realize Factory Pattern
+-Create Tarif Objects
+-Discounted or Regular -&gt; Obj.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>880</x>
+      <y>35</y>
+      <w>105</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>/Tariff/
+--
+Enum Weekday
+-price: double
+-isDiscounted: Boolean
+--
++reducePrice(): void
+--
+Responsibilities
+-Save pricing information
+-Give discounts on certain days</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>960</x>
+      <y>215</y>
+      <w>120</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>Regular
+--
+-price: double
+--
++reducePrice(): void
+--
+Responsibilities
+-Save pricing information
+-Be more expensive than Discounted
+-Give discounts on certain days</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>785</x>
+      <y>215</y>
+      <w>105</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>Discounted
+--
+-price: double
+--
++reducePrice(): void
+--
+Responsibilities
+-Save pricing information
+-Be cheaper than Regular 
+-Give discounts on certain days</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>830</x>
+      <y>305</y>
+      <w>90</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;create&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>935</x>
+      <y>305</y>
+      <w>95</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;create&gt;&gt;</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>825</x>
+      <y>115</y>
+      <w>90</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>940</x>
+      <y>115</y>
+      <w>90</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>235</x>
+      <y>370</y>
+      <w>110</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Day
+--
+MONDAY
+TUESDAY
+WEDNESDAY
+THURSDAY
+FRIDAY
+SATURDAY 
+SUNDAY</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>615</x>
+      <y>225</y>
+      <w>140</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>AdminManager
+--
+~add(tariff: Tariff): void
+~remove(tariff: Tariff): Tariff
+~add(screening: Screening): void
+~remove(screening: Screening): Screening
+~add(movie: Movie): void 
+~remove(movie:Movie): Movie
+--
+Responsibilities
+-Contains the logic behind AdminInterface</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>365</y>
+      <w>130</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Screening
+--
+-room: Room
+-movie: Movie
+-dateAndTime: LocalDateTime
+--
++getRoom(): Room
++getMovie(): Movie
++toString(): String
++setMovie()
+--
+Responsibilities
+-Sets movie into Location context
+-Sets movie into DateTime context</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>425</x>
+      <y>225</y>
+      <w>135</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>UserManager
+--
+-sc: Scanner
+--
++display(date: LocalDate): void
++display(room: Room): void
++book(): Ticket
+--
+Responsibilities
+-Contains the logic behind UserInterface
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>350</y>
+      <w>140</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>Movie
+--
+-duration: int
+-title: String
+-nickname: String
+--
++toString(): String
++getDuration(): int
++getTitle(): String
++getNickname(): String
++setDuration(min: int): void
++setTitle(title: String): void
++setNickname(nick: String): void
+--
+Responsibilities
+-Contains all information about the movie
+-Nice way of displaying information</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>735</x>
+      <y>490</y>
+      <w>130</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Cinema
+--
+-room: Room
+-room: Room
+-rooms: Room[]
+--
+-Cinema()
++getFirst(): Room
++getSecond(): Room
+--
+Responsibilities
+-Contains both of the rooms
+-Screenings are accessed starting here
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>545</x>
+      <y>495</y>
+      <w>145</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>Room
+--
++moviesShown: TreeMap&lt;String, Screening&gt;
+--
+
+--
+Responsibilities
+-Contains Data Structures
+-Maps screenings to rooms</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>200</y>
+      <w>45</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;create&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;50.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>665</x>
+      <y>200</y>
+      <w>35</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;create&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;50.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>685</x>
+      <y>535</y>
+      <w>60</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>695</x>
+      <y>410</y>
+      <w>35</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>445</x>
+      <y>295</y>
+      <w>40</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;140.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>460</y>
+      <w>15</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>625</x>
+      <y>305</y>
+      <w>55</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>400</y>
+      <w>50</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>365</y>
+      <w>180</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Ticket
+--
+-screening: Screening
+-tariff: Tariff
+-price: double
+-day: Enum
+--
++getScreening(): Screening
++setScreening(screening: Screening): void
++toString(): String
+-discount(): void
+--
+Responsibilities
+-Contains screening, pricing and time info at once
+-Has ability to discount prices depending on Day(Enum) </panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
